@@ -1,0 +1,36 @@
+%% -*- coding: utf-8 -*-
+%% Table caption template
+%% Table ID: 01
+%%
+%% GUIDELINES:
+%% - Keep captions concise but informative (1-3 sentences)
+%% - Define all abbreviations used in the table
+%% - Reference in text as Table~\ref{tab:example01}
+%% - For data tables, place CSV/Excel files here for auto-conversion
+
+%% EXAMPLE TABLE STRUCTURE:
+\begin{table}[htbp]
+\centering
+\caption{Demographic characteristics of the study cohort. Values shown as mean ± SD
+or n (\%). Statistical comparisons performed using t-test for continuous variables
+and χ² test for categorical variables. *P < 0.05, **P < 0.01.}
+\label{tab:example01}
+\begin{tabular}{lccc}
+\hline
+\textbf{Characteristic} & \textbf{Group A} & \textbf{Group B} & \textbf{P-value} \\
+\hline
+Sample size (n) & 45 & 52 & - \\
+Age (years) & 34.2 ± 5.8 & 36.1 ± 6.2 & 0.123 \\
+Gender (male) & 23 (51.1\%) & 28 (53.8\%) & 0.789 \\
+Measurement 1 & 12.3 ± 2.1 & 15.7 ± 2.8 & 0.001** \\
+Measurement 2 & 8.9 ± 1.5 & 9.2 ± 1.7 & 0.421 \\
+\hline
+\end{tabular}
+\end{table}
+
+%% ALTERNATIVE: For CSV/Excel files
+%% 1. Place your data file here: example_data.csv
+%% 2. It will be auto-converted to LaTeX table during compilation
+%% 3. Supported formats: .csv, .xlsx
+
+%%%% EOF

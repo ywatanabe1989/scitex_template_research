@@ -1,0 +1,21 @@
+csv2latex translates a csv file to a LaTeX file
+Example: csv2latex january_stats.csv > january_stats.tex
+Usage: csv2latex [--nohead] (LaTeX) no document header: useful for inclusion
+	[--longtable] (LaTeX) use package longtable: useful for long input
+	[--noescape] (LaTeX) do not escape text: useful for mixed CSV/TeX input
+	[--guess] (CSV) guess separator and block |
+	[--separator <(c)omma|(s)emicolon|(t)ab|s(p)ace|co(l)on>] (CSV's comma)
+	[--block <(q)uote|(d)ouble|(n)one>] (CSV) block delimiter (e.g: none)
+	[--lines n] (LaTeX) rows per table: useful for long tabulars |
+		[--font n] font size used (in pt)
+	[--position <l|c|r>] (LaTeX) text align in cells
+	[--colorrows graylevel] (LaTeX) alternate gray rows (e.g: 0.75)
+	[--reduce level] (LaTeX) reduce table size (e.g: 1)
+	[--landscape] (LaTeX) use landscape mode
+	[--repeatheader] (LaTeX) repeat table header (for long tables)
+	[--nohlines] (LaTeX) don't put hline between table rows
+	[--novlines] (LaTeX) don't put vline between columns
+		csv_file.csv
+The "longtable" option needs the {longtable} LaTeX package
+The "colorrows" option needs the {colortbl} LaTeX package
+The "reduce" option needs the {relsize} LaTeX package
