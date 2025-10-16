@@ -1,0 +1,40 @@
+%% -*- coding: utf-8 -*-
+%% Figure caption template
+%% Figure ID: 01
+%%
+%% GUIDELINES:
+%% - Describe what the figure shows and its key message
+%% - Explain each panel (A, B, C, etc.) systematically
+%% - Define all symbols, colors, line styles, error bars
+%% - Keep technical details in caption, interpretation in main text
+%% - Reference in text as Figure~\ref{fig:example01}
+
+%% SUPPORTED FORMATS:
+%% - Images: .jpg, .png, .pdf, .tif
+%% - Mermaid diagrams: .mmd (auto-converted)
+%% - Place files in this directory
+
+%% EXAMPLE FIGURE:
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.85\textwidth]{figures/caption_and_media/example_figure_01.png}
+\caption{\textbf{Example experimental workflow and results.}
+(\textbf{A}) Schematic diagram showing the experimental design with sample sizes
+(n=30 per group) and timeline.
+(\textbf{B}) Representative data showing measurement over time. Blue line: control
+group; red line: treatment group. Shaded areas represent 95\% confidence intervals.
+(\textbf{C}) Quantitative comparison between groups. Error bars indicate standard
+deviation. **P < 0.01, two-tailed t-test.
+(\textbf{D}) Correlation analysis between variables X and Y (Pearson's r = 0.85,
+P < 0.001, n=60).}
+\label{fig:example01}
+\end{figure}
+
+%% TIPS:
+%% - Use \textbf{} for panel labels (A), (B), (C)
+%% - Define statistical tests and significance levels
+%% - Specify sample sizes where relevant
+%% - Explain what error bars/shading represent
+%% - Use consistent terminology with main text
+
+%%%% EOF
