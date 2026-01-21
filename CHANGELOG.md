@@ -51,5 +51,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## Links
 
 - [SciTeX Documentation](https://scitex.ai)
-- [SciTeX GitHub](https://github.com/ywatanabe1989/scitex-code)
+- [SciTeX GitHub](https://github.com/ywatanabe1989/scitex-python)
 - [Template Repository](https://github.com/ywatanabe1989/scitex-research-template)
