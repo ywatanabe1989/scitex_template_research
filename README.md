@@ -39,6 +39,9 @@ make run-mnist
 
 ```
 scitex-research-template/
+├── .claude/             # AI agent configuration
+│   ├── commands/        # Custom slash commands
+│   └── skills/          # Domain-specific agent guidance
 ├── config/              # YAML configuration files
 ├── data/                # Centralized data storage (symlinked from scripts/*_out/)
 ├── scripts/             # Analysis scripts
@@ -55,6 +58,7 @@ scitex-research-template/
 ├── management/          # Project management scripts
 ├── externals/           # External dependencies
 ├── docs/                # Documentation
+├── GITIGNORED/          # Untracked working files (task tracking, agent notes)
 ├── .venv -> ~/.venv     # Python virtual environment (symlink)
 └── Makefile             # Automation commands
 ```
@@ -472,6 +476,17 @@ script_out/
 - **Testing framework** included
 - **Figure provenance** tracking via symlinks
 - **AI integration** for coding assistance
+
+## AI Agent Integration
+
+This template supports AI coding agents (e.g., Claude Code) out of the box:
+
+- **`CLAUDE.md`** at the project root provides project context and instructions to the agent.
+- **`.claude/skills/`** contains domain-specific guidance files that agents can load for specialized tasks.
+- **`.claude/commands/`** contains custom slash commands for common workflows.
+- **`GITIGNORED/`** is where agents store task tracking, working notes, and intermediate files. This directory is gitignored and not committed.
+
+> **Note:** The `_skills/` directory is deprecated. Domain-specific agent guidance has moved to `.claude/skills/`.
 
 ## Documentation
 

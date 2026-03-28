@@ -1,6 +1,7 @@
 
 ### Source: /home/ywatanabe/.git-templates/.gitignore-templates/Custom/Specific.gitignore ###
 # Please add files here
+GITIGNORED/
 
 ### Source: /home/ywatanabe/.git-templates/.gitignore-templates/Custom/Secrets.gitignore ###
 .git-crypt/keys
@@ -626,8 +627,10 @@ flycheck_*.el
 docs/to_claude
 docs/from_agents
 docs/from_user
-CLAUDE.md
-.claude
+# CLAUDE.md is tracked in this template (cloned by users)
+# CLAUDE.md
+# .claude/ is tracked in this template (skills + commands for users)
+# .claude
 mgmt
 .mcp.json
 
